@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login 1</h1>
+  
+<form action="/url" method="GET"> 
+    <!--The action attribute specifies the URL where the form data will be submitted when the form is submitted.
+    The method attribute specifies the HTTP method used to submit the form data to the server. 
+    Here, it's set to "GET", meaning form data will be appended to the URL as query parameters when the form is submitted.
+    -->
+     
+  <div class="container">
+    <label for="username"><b>Username</b></label> 
+    <!--The <label> element in HTML is used to associate a text label with an input element, such as an <input> field or <textarea>. 
+        It provides a descriptive label for the input element, making it more accessible and user-friendly.
+        The for attribute specifies the ID of the input element it's associated with
+        The <b> element is used to make the text bold.-->
+
+    <input type="text" placeholder="Enter Username" name="username" required> <br><br>
+    <!--The type="text" attribute specifies that it's a text input field.
+    The placeholder attribute provides a hint to the user about what to enter in the field.
+    The name="username" attribute assigns the name "username" to the input field, which will be used to identify the field when the form is submitted.
+    The required attribute makes the field mandatory, so the user must enter a value before submitting the form.-->
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required> <br><br>
+   
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me on this device
+    </label><br><br>
+     <!--The checked="checked" attribute sets the checkbox to be checked by default.-->
+
+    <button type="submit">Login</button> <br><br>
+    <span class="psw">Forgot your password? <a href="#">Click here to reset it</a></span>
+    <!--The link is represented by the <a> element with an href="#", indicating a placeholder URL.-->
+  </div>
+
+</form>
+<hr>
+
+
+
+<!-------------------------------------------------------------------->
+
+ <h1>Login</h1>
+<form >
+     
+  <div class="container">
+    <p>Username:</p>
+    <input type="text"> 
+
+    <p>Password:</p>
+    <input type="password"> <br><br>
+
+    <input type="checkbox"> Remember me on this device<br><br>
+
+    <button>Login</button> <br><br>
+    <span>Forgot your password? <a href="#">Click here to reset it</a></span>
+  </div>
+
+</form>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
