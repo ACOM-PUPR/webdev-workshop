@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Adding Two Digits <br> </h2>
+    <form>
+        <label for="first">Enter a digit </label>
+        <input type="text" id="first" placeholder="0">
+        <br>
+        <label for="second">Enter a digit: </label>
+        <input type="text" id="second" placeholder="0">
+        <br>
+        <label for="result">Result:</label>
+        <p id="equation"></p>
+        <p id="result"></p>
+        <button type="button" onclick="addDigits()">Submit</button>
+    </form>
+    <script>
+        function addDigits() {
+            var num1 = document.getElementById("first").value;
+            var num2 = document.getElementById("second").value;
+
+            console.log(num1);
+            console.log(num2)
+            
+            let sum = function sumDigits(num1, num2) {
+
+                
+                return parseInt(num1) + parseInt(num2);
+            }
+            
+            console.log(sum(num1,num2));
+
+            const equation = `${num1} + ${num2} = ${sum(num1,num2)}`;
+            document.getElementById("equation").textContent = equation;
+            document.getElementById("result").textContent = sum(num1,num2);
+        }
+    </script>
+</body>
+</html>
